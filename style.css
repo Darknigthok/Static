@@ -1,0 +1,436 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    background-image: url(./images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: rgb(0, 0, 0);
+    background-color: rgb(238, 236, 236);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 1rem;
+}
+#left > h1{
+    font-size: 110%;
+    color: #dfdcdc;
+    font-weight: 400;
+}
+#left > h1 >span{
+    color: white;
+}
+#right #cont{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    margin-top: 10px;
+}
+#cont>li>a{
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem 1rem;
+    display: block;
+    font-size: 110%;
+    font-weight: 500;
+}
+#cont>li>a>button{
+    font-size: 1rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    background-color: transparent;
+    height: 30px;
+}
+/* ----------------DropDown---------------- */
+#menu{
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    right: 0%;
+    width: 180%;
+}
+#drop{
+    position: relative;
+}
+#menu>li>a{
+    color: gray;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border: 2px solid rgb(237, 233, 233);
+}
+#menu>li>a:hover{
+    background-color: orange;
+    color: white;
+}
+#drop:hover{
+    border: 0px solid gray;
+    background-color: rgba(129, 127, 127, 0.623);
+    border-radius: 9px;
+}
+#drop:hover #menu{
+    display: block;
+}
+#menu2{
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: 75%;
+    right: 100%;
+    width: 90%;
+}
+#menu2>li>a{
+    color: gray;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border: 2px solid rgb(237, 233, 233);
+}
+#menu2>li>a:hover{
+    background-color: orange;
+    color: white;
+}
+#drop2:hover #menu2{
+    display: block;
+}
+/* -------------Alpha------------- */
+#alpha{
+    text-align: center;
+    margin-top: 120px;
+}
+#alpha h2{
+    color: white;
+    font-size: 4rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+#alpha p{
+    margin-top: 5px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+#alpha>#btn1{
+    margin-top: 10px;
+    background-color: white;
+    color: gray;
+    border: white;
+    width: 14%;
+    height: 2.7rem;
+    border-radius: 6px;
+    font-size: 16px;
+}
+#alpha>#btn2{
+    margin-left: 10px;
+    width: 14%;
+    height: 2.7rem;
+    border-radius: 6px;
+    font-size: 16px;
+    border: 3px solid white;
+    background: transparent;
+    color: white;
+}
+/* ------------------mobile------------------ */
+#mobile{
+    text-align: center;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    border-radius: 8px;
+    margin-top: 8rem;
+}
+#mobile h2{
+    color: gray;
+    font-size: 40px;
+    font-weight: 350;
+    padding-top: 4rem;
+}
+#mobile hr{
+    color: gray;
+    margin: 0px 120px;
+}
+#mobile p{
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding-top: 20px;
+}
+#mobile img{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: -8px;
+    border-radius: 5px;
+}
+/* ---------icon---------- */
+#icon{
+    background-color: white;
+    width: 70%;
+    margin: 2rem auto auto auto;
+    border-radius: 8px;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+#icon>div{
+    width: 48%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#icon>div>h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(83, 83, 83);
+}
+#icon>div>p{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(83, 83, 83);
+}
+#icon>#div1{
+    border-right: 2px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    position: relative;
+    top: 1.8px;
+    left: 3.5px;
+}
+#icon>#div4{
+    border-top: 2px solid #e5e5e5;
+    border-left: 2px solid #e5e5e5;
+}
+.fa-bolt-lightning{
+    background-color: rgb(218, 113, 113);
+    color: white;
+    border-radius: 100%;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+}
+.fa-chart-area{
+    background-color: #7FCDB8;
+    color: white;
+    border-radius: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 2.5rem;
+}
+.fa-cloud{
+    background-color: #90B0BA;
+    color: white;
+    border-radius: 100%;
+    padding: 1rem 1.0rem;
+    font-size: 2.5rem;
+}
+.fa-lock{
+    background-color: #E5CB95;
+    color: white;
+    border-radius: 100%;
+    padding: 1rem 1.4rem;
+    font-size: 2.5rem;
+}
+/* ------------cards------------- */
+#cards{
+    display: flex;
+    width: 70%;
+    margin: 2rem auto;
+    justify-content: space-between;
+    text-align: center;
+}
+#cards > div{
+    background-color: white;
+    width: 48%;
+    padding-bottom: 2rem;
+    border-radius: 8px;
+}
+#cards>div>img{
+    width: 100%
+}
+#cards>div>button{
+    border: 2px solid gray;
+    background-color: white;
+    color: gray;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+}
+#cards>div>h2{
+    color: gray;
+    font-size: 35px;
+    font-weight: 300;
+}
+#cards>div>p{
+    color: gray;
+    font-size: 18px;
+    font-weight: 300;
+}
+/* ----------SignUp------------ */
+#signup{
+    width: 100%;
+    background-color: #e89980;
+    text-align: center;
+    margin-top: 60px;
+    color: #f9e6df;
+}
+#signup>#head{
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 300;
+}
+#signup>#para{
+    margin-top: -10px;
+    font-weight: 350;
+    font-size: 18px;
+}
+#signup div>#input{
+    width: 20%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 60px;
+    font-size: 15px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+#input::placeholder{
+    color: white;
+    font-weight: 100;
+}
+#signup div>#btn{
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    color: #e89980;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 15px;
+}
+/* ----------footer----------- */
+footer{
+    color: rgba(160, 159, 159, 0.819);
+}
+footer>#div1{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 30px;
+    font-size: 30px;
+}
+footer>#div2{
+    display: flex;
+    gap: 30px;
+    margin-left: 30rem;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 5rem;
+}
+footer>#div2>p{
+    border-right: 2px solid rgba(160, 159, 159, 0.684);
+    padding-right: 30px;
+}
+footer>#div2>#p3{
+    border: none;
+}
+#box{
+    display: none;
+}
+/* ------------Mobile Version------------- */
+@media (max-width: 600px){
+    body{
+        background-size: 190%;
+        background-position-x: center;
+    }
+    #box{
+        display: inline-block;
+        color: white;
+        background-color: rgb(137, 181, 137);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    nav{
+        display: none;
+    }
+    #alpha{
+        margin-top: 0rem;
+        width: 80%;
+        margin: auto;
+    }
+    #alpha h2{
+        font-size: 3rem;
+    }
+    #alpha p{
+        font-size: 1rem;
+    }
+    #alpha>#btn1{
+        margin-top: 10px;
+        width: 100%;
+        }
+    #alpha>#btn2{
+        width: 100%;
+        margin-top: 10px;
+        margin-left: -1px;
+    }
+    #mobile{
+        /* text-align: center;
+        background-color: white; */
+        width: 100%;
+        margin: auto;
+        border-radius: 0px;
+        margin-top: 1rem;
+    }
+    #mobile h2{
+        font-size: 20px;
+        width: 90%;
+        padding-left: 20px;
+    }
+    #mobile hr{
+        margin: 0px 50px;
+    }
+    #mobile p{
+        font-size: 1rem;
+        width: 90%;
+        padding-left: 20px;
+    }
+    br{
+        display: none;
+    }
+    #icon{
+        width: 100%;
+        margin: 1rem auto auto auto;
+    }
+    #icon>div{
+        width: 100%;
+        border-bottom: 2px solid #e5e5e5;
+    }
+    #icon>#div1{
+        border-right: none;
+        border-bottom: 2px solid #e5e5e5;
+        position: relative;
+        top: 1.8px;
+        left: 3.5px;
+    }
+    #icon>#div4{
+        border-top: none;
+        border-left: none;
+        border-bottom: none;
+    }
+    #cards{
+        display: block;
+        width: 100%;
+        margin: 1rem auto auto auto;
+    }
+    #cards > div{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
